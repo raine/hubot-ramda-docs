@@ -9,7 +9,7 @@ const { join } = require('ramda')
 const unwords = join(' ')
 const mention = (user) => `@${user}`
 
-module.exports = (bot) => {
+module.exports = (bot) =>
   bot.hear(/^`?R\.([a-z]+)`?(?: @(\w[\w-]+))?\s?$/i, (res) => {
     const [_, fnName, user] = res.match
 
@@ -22,4 +22,3 @@ module.exports = (bot) => {
                 formatGithubSrcLink(fnDoc.name)
               ])))
   })
-}
