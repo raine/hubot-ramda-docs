@@ -1,4 +1,4 @@
-const { mdPre, mdLink } = require('./markdown')
+const { mdPre } = require('./markdown')
 const DOCS_URL = 'http://ramdajs.com/docs/'
 
 const formatRamdaDocsLink = (name, sig) => 

@@ -25,7 +25,7 @@ module.exports = (bot) =>
             fnDoc =>
               res.reply(trim(unwords([
                 (user ? mention(user) : ''),
-                pipe(formatRamdaDocsLink(fnDoc.name, fnDoc.sig), apply(mdLinkFn)),
-                pipe(formatGithubSrcLink(fnDoc.name), mdLinkFn('Ⓢ'))
+                pipe(formatRamdaDocsLink, apply(mdLinkFn))(fnDoc.name, fnDoc.sig),
+                pipe(formatGithubSrcLink, apply(mdLinkFn))(fnDoc.name, 'Ⓢ')
               ]))))
   })
