@@ -11,6 +11,7 @@
   },
   "author": "Raine Virta <raine.virta@gmail.com>",
   "license": "ISC",
+  "repository": "raine/hubot-ramda-docs",
   "dependencies": {
     "data.task": "^3.0.0",
     "ramda": "^0.19.1",
